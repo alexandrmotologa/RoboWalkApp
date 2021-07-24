@@ -39,51 +39,43 @@ public class RoboWalkApp {
 			} 
 			
 			// STOP AT BORDER
+			// left direction
 //			if(dir.equals("a") && rc != W-W) {
-//				// left
-//				
 //				rc--;
 //			}
+			// right direction
 //			if(dir.equals("d") && rc != W-1) {
-//				// right
-//				
 //				rc++;
 //			}
+			// bottom direction
 //			if(dir.equals("s") && rr != H-1) {
-//				// bottom
-//				
 //				rr++;
-//				
 //			}
+			// top direction
 //			if(dir.equals("w") && rr != H-H) {
-//				// top
-//				
 //				rr--;
 //			}
 
 			
 			// TELEPORT
+			// left  direction
 			if(dir.equals("a") || dir.equals("A")) {
-				// left
-				
 				if (rc == W-W) {
 					rc = W-1;
 				} else {
 					rc--;
 				}
 			}
+			// right  direction
 			if(dir.equals("d") || dir.equals("D")) {
-				// right
-				
 				if (rc == W-1) {
 					rc = W-W;
 				} else {
 					rc++;
 				}
 			}
+			// bottom  direction
 			if(dir.equals("s") || dir.equals("S")) {
-				// bottom
-				
 				if (rr == H-1) {
 					rr = H-H;
 				} else {
@@ -91,9 +83,8 @@ public class RoboWalkApp {
 				}
 				
 			}
+			// top  direction
 			if(dir.equals("w") || dir.equals("W")) {
-				// top
-				
 				if (rr == H-H) {
 					rr = H-1;
 				} else {
@@ -105,7 +96,6 @@ public class RoboWalkApp {
 	}
 	
 	// custom methods
-	
 	static void renderMap(final int W, final int H, int rr, int rc, int gr, int gc, boolean garbageColected) {
 		for (int row = 0; row < W; row++) {
 			for (int col = 0; col < H; col++) {
@@ -121,7 +111,7 @@ public class RoboWalkApp {
 		}
 	}
 	
-	
+	// scroll console position
 	static void clearScreen() {
 		for (int i = 0; i < 43; i++) {
 			System.out.println();
