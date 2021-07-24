@@ -28,7 +28,7 @@ public class RoboWalkApp {
 		// loop for change robot positions
 		while(true) {
 			
-			//new garbage on square
+			//random coordinates for new garbage on square
 			if(garbageColected == true) {
 				Random rn = new Random();
 				gr = rn.nextInt(9) + 1;
