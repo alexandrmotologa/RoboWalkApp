@@ -24,6 +24,7 @@ public class RoboWalkApp {
 		
 		Scanner in = new Scanner(System.in);
 
+		// loop for change robot positions
 		while(true) {
 			clearScreen();
 			renderMap(W, H, rr, rc, gr, gc, garbageColected);
