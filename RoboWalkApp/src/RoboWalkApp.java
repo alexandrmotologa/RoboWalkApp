@@ -118,7 +118,4 @@ public class RoboWalkApp {
 			System.out.println();
 		}
 	}
-	
-	
-
 }
