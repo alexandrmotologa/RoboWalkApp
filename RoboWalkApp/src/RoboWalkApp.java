@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class RoboWalkApp {
@@ -26,6 +27,15 @@ public class RoboWalkApp {
 
 		// loop for change robot positions
 		while(true) {
+			
+			//new garbage on square
+			if(garbageColected == true) {
+				Random rn = new Random();
+				gr = rn.nextInt(9) + 1;
+				gc = rn.nextInt(9) + 1;
+				garbageColected = false;
+			}
+			
 			clearScreen();
 			renderMap(W, H, rr, rc, gr, gc, garbageColected);
 			System.out.println();
