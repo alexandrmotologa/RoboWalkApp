@@ -92,7 +92,6 @@ public class RoboWalkApp {
 				} else {
 					rr++;
 				}
-				
 			}
 			// top  direction
 			if(dir.equals("w") || dir.equals("W")) {
